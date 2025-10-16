@@ -16,8 +16,8 @@ st.set_page_config(
 # --- Konfigurasi Supabase (ASUMSI DARI st.secrets) ---
 # Anda harus memastikan file .streamlit/secrets.toml sudah ada
 try:
-SUPABASE_URL ="https://axgenexhomnoddhhirdd.supabase.co"
-SUPABASE_KEY =" eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4Z2VuZXhob21ub2RkaGhpcmRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA0NTg2MjEsImV4cCI6MjA3NjAzNDYyMX0.3cx-ftiTi229Q_f4S0srkvsxj1HNBO_3emB37s6VdF8"
+    SUPABASE_URL ="https://axgenexhomnoddhhirdd.supabase.co"
+    SUPABASE_KEY =" eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4Z2VuZXhob21ub2RkaGhpcmRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA0NTg2MjEsImV4cCI6MjA3NjAzNDYyMX0.3cx-ftiTi229Q_f4S0srkvsxj1HNBO_3emB37s6VdF8"
 
 except KeyError:
     st.error("Pastikan Anda telah mendefinisikan SUPABASE_URL dan SUPABASE_KEY di file .streamlit/secrets.toml!")
@@ -326,5 +326,6 @@ if st.session_state['logged_in']:
     display_main_app()
 else:
     display_login()
+
 
 
